@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portfoliodb',
-        'USER' : 'postgres',
-        'PASSWORD': 'Tayebola1',
+        'USER' : 'postgresql',
+        'PASSWORD': 'Taye1Bola',
         'HOST' : 'localhost',
         'PORT' : '5432',
     }
@@ -135,6 +135,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL ='/media/'
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
